@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>Welcome to <%- title %></h1>
+      <% messages.forEach((message) => {%>
+      <div class="message-container">
+        <p class="message-user"><%- message.user %></p>
+        <p class="message-text"><%- message.text %></p>
+        <p class="message-time"><%- message.added %></p>
+        <a class="btn" href="/details/<%- messages.indexOf(message) %>">
+          Open</a
+        >
+      </div>
+
+      <% })%>
+
+      <p class="home-link">GO to <a href="/new">Message Page</a></p>
+    </main>
+  </body>
+</html>
