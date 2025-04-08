@@ -1,13 +1,14 @@
 const { Router } = require('express');
+const { getAllMessages, form, newMessage, details } = require('../controllers/indexController');
 
-const indexController = require('../controllers/indexController');
+
 
 const indexRouter = Router();
 
 
-indexRouter.get('/', indexController.index);
-indexRouter.get('/new', indexController.form);
-indexRouter.post('/new', indexController.newMessage);
-indexRouter.get('/details/:id', indexController.details);
+indexRouter.get('/', getAllMessages);
+indexRouter.get('/new', form);
+indexRouter.post('/new', newMessage);
+indexRouter.get('/details/:id', details);
 
 module.exports = indexRouter;
