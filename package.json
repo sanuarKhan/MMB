@@ -1,0 +1,20 @@
+{
+  "name": "mmb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch app.js",
+    "db": "node db/populatedb.js $(node -e \"require('./constant.js').pg_connectionString\")"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-async-handler": "^1.2.0",
+    "pg": "^8.14.1"
+  }
+}

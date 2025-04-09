@@ -1,0 +1,31 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+
+# Environment variables
+.env
+
+# Data directories
+db/data/*
+
+# Logs
+logs/
+*.log
+
+# Directory for local database
+/data/db/
+
+# IDE specific files
+.vscode/
+.idea/
+
+# MacOS files
+.DS_Store
+
+# Docker files
+docker-compose.override.yml
+
+# Build outputs
+dist/
+build/
+

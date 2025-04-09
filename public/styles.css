@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  background-image: url("bg.webp");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-size: cover;
+}
+h1 {
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+h2 {
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+}
+.message-form {
+  background-color: #011408;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(5, 127, 68, 0.74);
+  margin: 20px auto;
+}
+
+.message-form .form-group {
+  margin-bottom: 15px;
+}
+
+.message-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #2807bf;
+}
+
+.message-form input[type="text"],
+.message-form input[type="email"],
+.message-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #d6b8f7;
+  background-color: rgba(8, 7, 9, 0.718);
+}
+
+.message-form button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.message-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.home-link {
+  color: #007bff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  background-color: rgba(6, 6, 44, 0.807);
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background: #0ce9cf69;
+  box-shadow: 0 2px 5px rgba(20, 24, 250, 0.5);
+  margin-top: 20px;
+}
+
+.message-user {
+  font-weight: 700;
+  font-size: 18px;
+  color: #032d5a;
+}
+
+.message-text {
+  margin-top: 10px;
+}
+
+.message-time {
+  font-size: 12px;
+  color: #02010c;
+}
+.btn {
+  background: #01071e;
+  padding: 5px;
+  color: #0056b3;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 5px 0;
+}
