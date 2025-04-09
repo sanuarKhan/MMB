@@ -1,9 +1,10 @@
 {
   "name": "mmb",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "this is a test project",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "dev": "node --watch app.js",
     "db": "node db/populatedb.js $(node -e \"require('./constant.js').pg_connectionString\")"
   },
