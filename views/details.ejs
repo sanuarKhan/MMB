@@ -3,16 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <title>Message Details</title>
+<<<<<<< HEAD
     <link href="/styles.css" rel="stylesheet" />
+=======
+    <link rel="stylesheet" href="/stylesheets/styles.css" />
+>>>>>>> 86ec19a18f002ecee9d0bcd4828c911eff2a3a6e
   </head>
 
   <body>
     <main class="container">
       <h1>Message Details</h1>
       <div class="message-container">
+<<<<<<< HEAD
         <p class="message-user"><%- message.username %></p>
         <p class="message-text"><%- message.text %></p>
         <p class="message-time"><%- message.date %></p>
+=======
+        <p class="message-user"><%- message.user %></p>
+        <p class="message-text"><%- message.text %></p>
+        <p class="message-time"><%- message.added.toLocaleString() %></p>
+>>>>>>> 86ec19a18f002ecee9d0bcd4828c911eff2a3a6e
       </div>
       <p class="home-link">GO to <a href="/">Home Page</a></p>
     </main>

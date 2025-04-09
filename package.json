@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "dev": "node --watch app.js",
+<<<<<<< HEAD
     "db": "node db/populatedb.js $(node -e \"require('./constant.js').pg_connectionString\")"
+=======
+    "db": "node db/populatedb.js postgres://sanuarkhan:islam@localhost:5432/messages"
+>>>>>>> 86ec19a18f002ecee9d0bcd4828c911eff2a3a6e
   },
   "keywords": [],
   "author": "",
@@ -17,4 +21,8 @@
     "express-async-handler": "^1.2.0",
     "pg": "^8.14.1"
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 86ec19a18f002ecee9d0bcd4828c911eff2a3a6e
