@@ -1,5 +1,4 @@
 
-
 const { Pool } = require("pg");
 
 const {pg_user, pg_host, pg_database, pg_password, pg_port} = require('../constant.js');

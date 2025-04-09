@@ -2,6 +2,7 @@ const asyncHandler = require('express-async-handler');
 const db = require('../db/queries');
 
 
+
 async function getAllMessages(req, res) {
     const messages = await db.getMessages();
    
@@ -36,9 +37,11 @@ async function details(req, res) {
     res.render('details', {title: "Message Details", message: message});
 }
 
+
 module.exports = {
   getAllMessages,
     form,
     newMessage,
-    details
+    details,
+
 };

@@ -9,25 +9,18 @@
   <body>
     <main class="container">
       <h1>Welcome to <%- title %></h1>
-      <% messages.forEach((message) => {%>
+
+      <% messages.forEach((message, index) => { %>
       <div class="message-container">
-<<<<<<< HEAD
         <p class="message-user"><%- message.username %></p>
         <p class="message-text"><%- message.text %></p>
         <p class="message-time"><%- message.date %></p>
-=======
-        <p class="message-user"><%- message.user %></p>
-        <p class="message-text"><%- message.text %></p>
-        <p class="message-time"><%- message.added %></p>
->>>>>>> 86ec19a18f002ecee9d0bcd4828c911eff2a3a6e
-        <a class="btn" href="/details/<%- messages.indexOf(message) %>">
-          Open</a
-        >
+
+        <a class="btn" href="/details/<%- index %>"> Open </a>
       </div>
+      <% }) %>
 
-      <% })%>
-
-      <p class="home-link">GO to <a href="/new">Message Page</a></p>
+      <p class="home-link">Go to <a href="/new">Message Page</a></p>
     </main>
   </body>
 </html>
